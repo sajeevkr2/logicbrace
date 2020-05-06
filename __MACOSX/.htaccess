@@ -1,0 +1,9 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule  ^Services.html http://forecom.co.in/services.html [L,R=301]
+RewriteRule  ^Customer.html http://forecom.co.in/customer.html [L,R=301]
+RewriteRule  ^Core-competency.html http://forecom.co.in/core-competency.html [L,R=301]
+RewriteRule  ^contact.html http://forecom.co.in/contact.php [L,R=301]
+RewriteRule  ^Contact.html http://forecom.co.in/contact.php [L,R=301]
+RewriteRule  ^Contact.html http://forecom.co.in/contact.php [L,R=301]
+RewriteRule  ^Know-us-closer.html http://forecom.co.in/know-us-closer.html [L,R=301]
