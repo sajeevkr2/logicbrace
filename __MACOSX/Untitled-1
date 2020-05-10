@@ -1,0 +1,22 @@
+<select id="enquiry" disabled>
+  <option value="Poly-Eagle-Eye-Cube-USB">Poly Eagle Eye Cube USB</option>
+  <option value="Aver-CAM340">Aver CAM340</option>
+  <option value="Avaya-HC020">Avaya HC020</option>
+  <option value="Poly-Studio">Poly Studio</option>
+  <option value="Aver-VB342">Aver VB342</option>
+  <option value="Aver-VC-520+">Aver VC 520+</option>
+  <option value="Avaya-CU360">Avaya CU360</option>
+  <option value="Poly-Studio-X50">Poly Studio X50, X30</option>
+  <option value="Poly-Group-500">Poly Group 500</option>
+  <option value="Avaya-XT5000">Avaya XT5000</option>
+  <option value="Aver-SVC500">Aver SVC500</option>
+  <option value="Poly-Trio-Visual-Collaboration-Kit">Poly Trio Visual Collaboration Kit</option>
+  <option value="Huddle-room">Huddle Room</option>
+  <option value="Medium-Sized-room">Medium Sized Room</option>
+  <option value="Large-room">Large Room</option>
+  <option value="ScanMate-i940-Scanner">ScanMate i940 Scanner</option>
+  <option value="S2050-Scanner">S2050 Scanner</option>
+  <option value="I3200-Scanner">I3200 Scanner</option>
+  <option value="E1025-Scanner">E1025 Scanner</option>
+  <option value="FUJITSU-ScanSnap-SV600-Scanner">FUJITSU ScanSnap SV600 Scanner</option>
+</select>
