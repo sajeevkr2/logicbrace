@@ -3,7 +3,8 @@ require_once( "./include/fgcontactform.php" );
 $formproc = new FGContactForm();
 //1. Add your email address here.
 //You can add more than one receipients.
-$formproc->AddRecipient( 'info@forecom.co.in' );
+//$formproc->AddRecipient( 'info@forecom.co.in' );
+$formproc->AddRecipient( 'logicbrace@gmail.com' );
 //<<---Put your email address here
 //2. For better security. Get a random tring from this link: http://tinyurl.com/randstr
 // and put it here
@@ -56,6 +57,7 @@ if ( isset( $_POST[ 'submit' ] ) ) {
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 	<style type="text/css">
 		.row {
 			width: 100% !important;
@@ -64,7 +66,7 @@ if ( isset( $_POST[ 'submit' ] ) ) {
 		.nogutter {
 			margin-right: 0 !important;
 			margin-left: 0 !important;
-			padding-left: 0 !important;
+			padding-left: 0 !important;`
 			padding-right: 0 !important;
 		}
 	</style>
@@ -81,6 +83,13 @@ if ( isset( $_POST[ 'submit' ] ) ) {
 			} );
 
 		} );
+		
+		function subjectSelect(x){
+			var y = x.split('#');
+			if(y[1]){
+				$("#enquiry").val((y[1]));
+			}
+}
 	</script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-QQY5CTZKK0"></script>
 <script>
@@ -92,7 +101,7 @@ if ( isset( $_POST[ 'submit' ] ) ) {
 </script>
 </head>
 
-<body>
+<body onload="subjectSelect($(location).attr('href'))">
 	<!-- menu-->
 	<div id="navigation-bar">
 		<nav class="navbar navbar-default navbar-static-top " role="navigation">
@@ -103,10 +112,6 @@ if ( isset( $_POST[ 'submit' ] ) ) {
 					<button type="button" class="navbar-toggle" id="menu-toggle">
                         <span class="glyphicon glyphicon-menu-hamburger"></span>
                     </button>
-				
-
-
-
 
 				</div>
 				<!-- Side bar  -->
@@ -129,6 +134,14 @@ if ( isset( $_POST[ 'submit' ] ) ) {
 							<a href="services.html#training" class="list-group-item sidebar-menuitem  remove-border">Training</a>
 							<a href="services.html#support" class="list-group-item sidebar-menuitem  remove-border">Support</a>
 						</div>
+						<a href="#products" class="list-group-item list-group-item-success sidebar-menu-heading remove-border"
+              				data-toggle="collapse" data-parent="#sidebar-wrapper">PRODUCTS</a>
+            				<div class="collapse" id="products">
+              				<a href="video-conferencing- solutions.html" class="list-group-item sidebar-menuitem remove-border">Video conferencing solutions</a>
+              				<a href="educational-technology-solutions.html" class="list-group-item sidebar-menuitem remove-border">Educational Technology Solutions</a>
+              				<a href="enterprises-system&connectivity-solutions.html" class="list-group-item sidebar-menuitem remove-border">Enterprises System & Connectivity solutions</a>
+              				<a href="digitization-solutions.html" class="list-group-item sidebar-menuitem remove-border">Digitization solutions</a>
+            			</div>
 						<a href="#industries" class="list-group-item list-group-item-success sidebar-menu-heading remove-border" data-toggle="collapse" data-parent="#sidebar-wrapper">Customers</a>
 						<div class="collapse" id="industries">
 							<a href="customer.html#k-12-education" class="list-group-item sidebar-menuitem  remove-border">K-12  Education</a>
@@ -178,6 +191,17 @@ if ( isset( $_POST[ 'submit' ] ) ) {
 								</li>
 							</ul>
 						</li>
+						<li class="dropdown" id="dropdown-desktop">
+              				<a class="dropdown-toggle" href="#"><span
+                  			class="menu-item">PRODUCTS</span></a>
+              			<ul class="dropdown-menu" id="dropdown-menu-desktop">
+                		<li><a href="video-conferencing- solutions.html">Video conferencing solutions</a></li>
+                		<li><a href="educational-technology-solutions.html">Educational Technology Solutions</a></li>
+                		<li><a href="enterprises-system&connectivity-solutions.html">Enterprises System & Connectivity
+                   	 	solutions</a></li>
+                		<li><a href="digitization-solutions.html">Digitization solutions</a></li>
+              </ul>
+            </li>
 						<li class="dropdown" id="dropdown-desktop">
 							<a class="dropdown-toggle" href="customer.html"><span class="menu-item ">CUSTOMER</span></a>
 							<ul class="dropdown-menu" id="dropdown-menu-desktop">
@@ -239,6 +263,34 @@ if ( isset( $_POST[ 'submit' ] ) ) {
 							<input type='hidden' class='spmhidip' name='<?php echo $formproc->GetSpamTrapInputName(); ?>'/>
 
 							<!-- <div><span class='error'><?php echo $formproc->GetErrorMessage(); ?></span></div> -->
+							<div class="form-group" style="display:none;">
+								<!-- <label for="name" class="col-sm-2 control-label">Name</label> -->
+								<div class="col-sm-12">
+								<select id="enquiry" name="enquiry" disabled>
+								<option value="">General Enquiry</option>
+  									<option value="Poly-Eagle-Eye-Cube-USB">Poly Eagle Eye Cube USB</option>
+    									<option value="Aver-CAM340">Aver CAM340</option>
+    									<option value="Avaya-HC020">Avaya HC020</option>
+    									<option value="Poly-Studio">Poly Studio</option>
+    									<option value="Aver-VB342">Aver VB342</option>
+    									<option value="Aver-VC-520+">Aver VC 520+</option>
+    									<option value="Avaya-CU360">Avaya CU360</option>
+    									<option value="Poly-Studio-X50">Poly Studio X50, X30</option>
+    									<option value="Poly-Group-500">Poly Group 500</option>
+    									<option value="Avaya-XT5000">Avaya XT5000</option>
+    									<option value="Aver-SVC500">Aver SVC500</option>
+    									<option value="Poly-Trio-Visual-Collaboration-Kit">Poly Trio Visual Collaboration Kit</option>
+    									<option value="Huddle-room">Huddle Room</option>
+    									<option value="Medium-Sized-room">Medium Sized Room</option>
+    									<option value="Large-room">Large Room</option>
+    									<option value="ScanMate-i940-Scanner">ScanMate i940 Scanner</option>
+    									<option value="S2050-Scanner">S2050 Scanner</option>
+    									<option value="I3200-Scanner">I3200 Scanner</option>
+    									<option value="E1025-Scanner">E1025 Scanner</option>
+    									<option value="FUJITSU-ScanSnap-SV600-Scanner">FUJITSU ScanSnap SV600 Scanner</option>
+  									</select>
+								</div>
+							</div>
 							<div class="form-group">
 								<!-- <label for="name" class="col-sm-2 control-label">Name</label> -->
 								<div class="col-sm-12">
@@ -257,9 +309,7 @@ if ( isset( $_POST[ 'submit' ] ) ) {
 							<div class="form-group">
 								<!-- 	<label for="message" class="col-sm-2 control-label">Message</label> -->
 								<div class="col-sm-12">
-									<textarea class="form-control required" rows="6" name="message" placeholder="Message">
-										<?php echo $formproc->SafeDisplay('message') ?>
-									</textarea>
+									<textarea class="form-control required" rows="6" name="message" placeholder="Message"><?php echo $formproc->SafeDisplay('message') ?></textarea>
 									<p class="text-danger"></p>
 								</div>
 							</div>

@@ -37,6 +37,7 @@ class FGContactForm {
 	var $error_message;
 	var $name;
 	var $email;
+	var $subject;
 	var $message;
 	var $from_address;
 	var $form_random_key;
@@ -163,7 +164,7 @@ class FGContactForm {
 
 		$this->mailer->CharSet = 'utf-8';
 
-		$this->mailer->Subject = "Contact form submission from $this->name";
+		$this->mailer->Subject = "Subject - $this->subject";
 
 		$this->mailer->From = $this->GetFromAddress();
 
@@ -469,6 +470,7 @@ class FGContactForm {
 	function CollectData() {
 		$this->name = $this->Sanitize( $_POST[ 'name' ] );
 		$this->email = $this->Sanitize( $_POST[ 'email' ] );
+		$this->subject = $this->Sanitize( $_POST[ 'enquiry' ] );
 
 		/*newline is OK in the message.*/
 		$this->message = $this->StripSlashes( $_POST[ 'message' ] );

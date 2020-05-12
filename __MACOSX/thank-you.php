@@ -77,6 +77,14 @@
                             <a href="services.html#training" class="list-group-item sidebar-menuitem  remove-border">Training</a>
                             <a href="services.html#support" class="list-group-item sidebar-menuitem  remove-border">Support</a>
                         </div>
+                        <a href="#products" class="list-group-item list-group-item-success sidebar-menu-heading remove-border"
+              				data-toggle="collapse" data-parent="#sidebar-wrapper">PRODUCTS</a>
+            				<div class="collapse" id="products">
+              				<a href="video-conferencing- solutions.html" class="list-group-item sidebar-menuitem remove-border">Video conferencing solutions</a>
+              				<a href="educational-technology-solutions.html" class="list-group-item sidebar-menuitem remove-border">Educational Technology Solutions</a>
+              				<a href="enterprises-system&connectivity-solutions.html" class="list-group-item sidebar-menuitem remove-border">Enterprises System & Connectivity solutions</a>
+              				<a href="digitization-solutions.html" class="list-group-item sidebar-menuitem remove-border">Digitization solutions</a>
+            			</div>
                         <a href="#industries" class="list-group-item list-group-item-success sidebar-menu-heading remove-border" data-toggle="collapse" data-parent="#sidebar-wrapper">Customers</a>
                         <div class="collapse" id="industries">
                             <a href="customer.html#k-12-education" class="list-group-item sidebar-menuitem  remove-border">K-12  Education</a>
@@ -117,6 +125,18 @@
                                 <li><a href="services.html#support">Support</a></li> 
                             </ul>
                         </li>
+						<li class="dropdown" id="dropdown-desktop">
+              				<a class="dropdown-toggle" href="#"><span
+                  			class="menu-item">PRODUCTS</span></a>
+              			<ul class="dropdown-menu" id="dropdown-menu-desktop">
+                		<li><a href="video-conferencing- solutions.html">Video conferencing solutions</a></li>
+                		<li><a href="educational-technology-solutions.html">Educational Technology Solutions</a></li>
+                		<li><a href="enterprises-system&connectivity-solutions.html">Enterprises System & Connectivity
+                   	 	solutions</a></li>
+                		<li><a href="digitization-solutions.html">Digitization solutions</a></li>
+              </ul>
+            </li>
+
                         <li class="dropdown"  id="dropdown-desktop">
                             <a class="dropdown-toggle" href="customer.html"><span class="menu-item ">CUSTOMER</span></a>
                             <ul class="dropdown-menu" id="dropdown-menu-desktop">
