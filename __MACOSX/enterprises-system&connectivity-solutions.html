@@ -52,13 +52,14 @@
   <link href="css/demo.css" rel="stylesheet" type="text/css">
   <link href="css/forecom.css" rel="stylesheet" type="text/css">
   <link href="animate-css/animate.min.css" rel="stylesheet">
-  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
   <link href="company-slider.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="js/jquery.product.js" type="text/javascript"></script>
+  <script src="js/jquery.smint.js" type="text/javascript"></script>
   <style>
-   .s1,
+    .s1,
     .s2 {
       min-height: 686px
     }
@@ -76,9 +77,14 @@
     .row {
       width: 100% !important
     }
-    .navbar-default {
-	background: white !important;
-}
+
+    .sTop {
+    height: 620px;
+    }
+
+    /* .navbar-default {
+      background: white !important;
+    } */
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QQY5CTZKK0"></script>
   <script>
@@ -96,7 +102,7 @@
       <div class="container">
         <div class="navbar-header">
           <a class="navbar-brand" id="desktop-logo" href="index.html">
-            <img src="pictures/logo.png" id="logo" />
+            <img src="pictures/carousel-logo.png" id="logo" />
           </a>
           <a class="navbar-brand" id="mobile-logo" style="display: none" href="index.html">
             <img src="pictures/logo.png" id="logo" />
@@ -132,17 +138,29 @@
               <a href="services.html#training" class="list-group-item sidebar-menuitem remove-border">Training</a>
               <a href="services.html#support" class="list-group-item sidebar-menuitem remove-border">Support</a>
             </div>
-            <a href="#products" class="list-group-item list-group-item-success sidebar-menu-heading remove-border"
+            <a href="#products" class="list-group-item list-group-item-success sidebar-menu-heading remove-border mobile-active-link"
               data-toggle="collapse" data-parent="#sidebar-wrapper">PRODUCTS</a>
             <div class="collapse" id="products">
-              <a href="video-conferencing- solutions.html" class="list-group-item sidebar-menuitem remove-border">Video conferencing solutions</a>
-              <a href="educational-technology-solutions.html" class="list-group-item sidebar-menuitem remove-border">Educational Technology Solutions</a>
-              <a href="enterprises-system&connectivity-solutions.html" class="list-group-item sidebar-menuitem remove-border">Enterprises System & Connectivity solutions</a>
-              <a href="digitization-solutions.html" class="list-group-item sidebar-menuitem remove-border">Digitization solutions</a>
+              <a href="video-conferencing- solutions.html" class="list-group-item sidebar-menuitem remove-border">Video
+                conferencing solutions</a>
+              <a href="educational-technology-solutions.html"
+                class="list-group-item sidebar-menuitem remove-border">Educational Technology Solutions</a>
+              <a href="enterprises-system&connectivity-solutions.html"
+                class="list-group-item sidebar-menuitem remove-border">Enterprises System & Connectivity solutions</a>
+              <a href="digitization-solutions.html" class="list-group-item sidebar-menuitem remove-border">Digitization
+                solutions</a>
             </div>
-            <a href="#industries"
-              class="list-group-item list-group-item-success sidebar-menu-heading remove-border mobile-active-link"
-              data-toggle="collapse" data-parent="#sidebar-wrapper">Customers</a>
+            <a href="#industries" class="list-group-item list-group-item-success sidebar-menu-heading remove-border" data-toggle="collapse" data-parent="#sidebar-wrapper">Customers</a>
+            <div class="collapse" id="industries">
+              <a href="customer.html#k-12-education" class="list-group-item sidebar-menuitem  remove-border">K-12  Education</a>
+              <a href="customer.html#higher_education" class="list-group-item sidebar-menuitem  remove-border">Higher Education</a>
+              <a href="customer.html#health_care" class="list-group-item sidebar-menuitem  remove-border">Healthcare</a>
+              <a href="customer.html#hospitality" class="list-group-item sidebar-menuitem  remove-border">Hospitality</a>
+              <a href="customer.html#government" class="list-group-item sidebar-menuitem  remove-border">Government </a>
+              <a href="customer.html#retail_enterprise" class="list-group-item sidebar-menuitem  remove-border">Retail Enterprise</a>
+              <a href="customer.html#banking" class="list-group-item sidebar-menuitem  remove-border">Banking</a>
+              <a href="customer.html#industrial" class="list-group-item sidebar-menuitem  remove-border">Industrial</a>
+            </div>
             <a href="know-us-closer.html"
               class="list-group-item list-group-item-success sidebar-menu-heading remove-border">Know us closer</a>
             <a href="contact.php"
@@ -152,8 +170,7 @@
         <div class="collapse navbar-collapse navbar-right" id="dropdown-desktop-menubar">
           <ul class="nav navbar-nav menubar">
             <li class="dropdown" id="dropdown-desktop">
-              <a class="dropdown-toggle" href="core-competency.html"><span
-                  class="menu-item ">Core Competency</span></a>
+              <a class="dropdown-toggle" href="core-competency.html"><span class="menu-item menu-item-manupulations">Core Competency</span></a>
               <ul class="dropdown-menu core-competency-ul" id="dropdown-menu-desktop">
                 <li>
                   <a href="core-competency.html#it_telecom">IT & Telecom Infrastructure solutions</a>
@@ -170,8 +187,7 @@
               </ul>
             </li>
             <li class="dropdown" id="dropdown-desktop">
-              <a class="dropdown-toggle" href="services.html"><span
-                  class="menu-item ">SERVICES</span></a>
+              <a class="dropdown-toggle" href="services.html"><span class="menu-item menu-item-manupulations">SERVICES</span></a>
               <ul class="dropdown-menu" id="dropdown-menu-desktop">
                 <li>
                   <a href="services.html#consultancy">Consultancy</a>
@@ -191,8 +207,7 @@
               </ul>
             </li>
             <li class="dropdown" id="dropdown-desktop">
-              <a class="dropdown-toggle" href="#"><span
-                  class="menu-item  active-link">PRODUCTS</span></a>
+              <a class="dropdown-toggle" href="#"><span class="menu-item  active-link menu-item-manupulations">PRODUCTS</span></a>
               <ul class="dropdown-menu" id="dropdown-menu-desktop">
                 <li><a href="video-conferencing- solutions.html">Video conferencing solutions</a></li>
                 <li><a href="educational-technology-solutions.html">Educational Technology Solutions</a></li>
@@ -202,16 +217,14 @@
               </ul>
             </li>
             <li class="dropdown" id="dropdown-desktop">
-              <a class="dropdown-toggle" href="customer.html"><span
-                  class="menu-item ">CUSTOMER</span></a>
+              <a class="dropdown-toggle" href="customer.html"><span class="menu-item menu-item-manupulations">CUSTOMER</span></a>
             </li>
             <li>
-              <a class="dropdown-toggle" href="know-us-closer.html"><span class="menu-item ">Know
+              <a class="dropdown-toggle" href="know-us-closer.html"><span class="menu-item menu-item-manupulations">Know
                   us closer</span></a>
             </li>
             <li>
-              <a class="dropdown-toggle" href="contact.php"><span
-                  class="menu-item ">Contact</span></a>
+              <a class="dropdown-toggle" href="contact.php"><span class="menu-item menu-item-manupulations">Contact</span></a>
             </li>
           </ul>
         </div>
@@ -220,61 +233,70 @@
   </div>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link href="css/menu-color.css" rel="stylesheet" type="text/css">
-  <!-- <div class="wrap">
-    <img class="headimage" src="pictures/Customer-2.jpg">
+  <div class="wrap">
+    <img class="headimage" src="pictures/marketing.jpg">
     <div class="section sTop">
-      <h1>"A satisfied customer is the best business strategy of all"</h1>
+      <!-- <h1>"A satisfied customer is the best business strategy of all"</h1> -->
     </div>
-    <div class="subMenu row">
+    <!-- <div class="subMenu row">
       <div class="menubox">
         <a href="#usb" class="subNavBtn col-lg-3 col-sm-3">USB Based VC Solutions</a>
         <a href="#codec" class="subNavBtn col-lg-3 col-sm-3">Codec Based VC Solutions</a>
         <a href="#board" class="subNavBtn col-lg-3 col-sm-3">Board Room (AV) Solutions</a>
       </div>
-    </div>
-  </div> -->
+    </div> -->
+  </div>
   <div class="row content product-header">
     <div>
 
       <div id="usb" class="row section consultancy product">
-        <label class="product-sub-heading">USB Based VC Solutions</label>
+        <!-- <label class="product-sub-heading">USB Based VC Solutions</label> -->
         <div class="inner col-md-5 box md product-inventory">
-          <div class="col-md-12" style="margin-bottom:60px;" onclick='document.getElementById("Poly-Eagle-Eye-Cube-USB").click()'>
-              <a href="contact.php#Poly-Eagle-Eye-Cube-USB" id="Poly-Eagle-Eye-Cube-USB"></a>
+          <div class="col-md-12" style="margin-bottom:60px;"
+            onclick='document.getElementById("Cloud-and-SaaS").click()'>
+            <a href="contact.php#Cloud-and-SaaS" id="Cloud-and-SaaS"></a>
             <label class="headingInSection col-md-12"></i>
-              Poly Eagle Eye Cube USB</label>
+              Cloud & SaaS</label>
             <div class="col-md-4 competency_img">
-              <img width="250px" height="250px" src="pictures/products/Poly Eagle Eye Cube USB.png"
-                alt="Video conferencing,Smart class room,Digital Projectors,Kerala Ernakulam Karnataka Tamilnadu">
+              <i class="fa fa-cloud-upload" aria-hidden="true"></i>
 
-              <!-- <button type="button" class="btn btn-primary btn-lg outline">Contact US</button> -->
 
             </div>
-            <div class="col-md-8" >
-              <label class="headingInsectionSubheading col-md-12">The advanced HD camera with intelligent group framing,
-                5x zoom and legendary audio performance that turns passive meetings in small spaces into powerful
-                experiences.
+            <div class="col-md-8" style="">
+              <label class="headingInsectionSubheading col-md-12">
+                <ul>
+                  <li>Content Delivery Network</li>
+                  <li>Document Management System</li>
+                  <li>Digital Survey</li>
+                  <li>Insta Compute</li>
+                  <li>Live Chat</li>
+                </ul>
               </label>
             </div>
           </div>
         </div>
 
-        <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px" onclick='document.getElementById("Aver-CAM340").click()'>
-              <a href="contact.php#Aver-CAM340" id="Aver-CAM340"></a>
+        <div class="inner col-md-5 box md product-inventory">
+          <div class="col-md-12" style="margin-bottom:60px" onclick='document.getElementById("Connectivity").click()'>
+            <a href="contact.php#Connectivity" id="Connectivity"></a>
             <label class="headingInSection col-md-12"></i>
-              Aver CAM340</label>
+              Connectivity</label>
             <div class="col-md-4 competency_img">
-              <img width="250px" height="250px" src="pictures/products/Aver CAM340.png"
-                alt="Video conferencing,Smart class room,Digital Projectors,Kerala Ernakulam Karnataka Tamilnadu">
-
-              <!-- <button type="button" class="btn btn-primary btn-lg outline">Contact US</button> -->
-
+                <i class="fa fa-link" aria-hidden="true"></i>
             </div>
-            <div class="col-md-8" >
-              <label class="headingInsectionSubheading col-md-12">4K Wide angle USB camera with inbuilt microphones that
-                instantly start a next generation video
-                communication experience for huddle and small conference rooms.
+            <div class="col-md-8" style="">
+              <label class="headingInsectionSubheading col-md-12">
+                <ul>
+                  <li>Business Broadband</li>
+                  <li>ILL</li>
+                  <li>L2 Multicast</li>
+                  <li>Lease Line</li>
+                  <li>Smart VPN</li>
+                  <li>Smart Office</li>
+                  <li>Toll Free Service</li>
+                  <li>PRI</li>
+                  <li>SIP</li>
+                </ul>
               </label>
             </div>
           </div>
@@ -284,43 +306,49 @@
       </div>
       <div class="row section consultancy product">
 
-        <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px;"  onclick='document.getElementById("Avaya-HC020").click()'>
-              <a href="contact.php#Avaya-HC020" id="Avaya-HC020"></a>
+        <div class="inner col-md-5 box md product-inventory">
+          <div class="col-md-12" style="margin-bottom:60px;" onclick='document.getElementById("Marketing-Solutions").click()'>
+            <a href="contact.php#Marketing-Solutions" id="Marketing-Solutions"></a>
             <label class="headingInSection col-md-12"></i>
-              Avaya HC020</label>
+              Marketing Solutions</label>
             <div class="col-md-4 competency_img">
-              <img width="250px" height="250px" src="pictures/products/Avaya HC020.png"
-                alt="Video conferencing,Smart class room,Digital Projectors,Kerala Ernakulam Karnataka Tamilnadu">
+                <i class="fas fa-poll"></i>
 
               <!-- <button type="button" class="btn btn-primary btn-lg outline">Contact US</button> -->
 
             </div>
-            <div class="col-md-8" >
-              <label class="headingInsectionSubheading col-md-12">Full HD USB fixed camera, leveraging the quality of a
-                UltraHD 4K sensor to provide a high quality
-                1080p30 video signal and the option to send uncompressed signal on HDMI.
+            <div class="col-md-8" style="">
+              <label class="headingInsectionSubheading col-md-12">
+                <ul>
+                  <li>Call Registry</li>
+                  <li>Digital Survey</li>
+                  <li>Hosted IVR</li>
+                  <li>Hosted OBD</li>
+                  <li>Live Chat</li>
+                  <li>SMS Solution</li>
+                </ul>
               </label>
             </div>
           </div>
         </div>
 
-        <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px"  onclick='document.getElementById("Poly-Studio").click()'>
-              <a href="contact.php#Poly-Studio" id="Poly-Studio"></a>
+        <div class="inner col-md-5 box md product-inventory">
+          <div class="col-md-12" style="margin-bottom:60px" onclick='document.getElementById("Collaboration").click()'>
+            <a href="contact.php#Collaboration" id="Collaboration"></a>
             <label class="headingInSection col-md-12"></i>
-              Poly Studio</label>
+              Collaboration</label>
             <div class="col-md-4 competency_img">
-              <img width="250px" height="250px" src="pictures/products/Poly Studio.png"
-                alt="Video conferencing,Smart class room,Digital Projectors,Kerala Ernakulam Karnataka Tamilnadu">
+                <i class="fas fa-handshake"></i>
 
               <!-- <button type="button" class="btn btn-primary btn-lg outline">Contact US</button>
              -->
             </div>
-            <div class="col-md-8" >
-              <label class="headingInsectionSubheading col-md-12">The premium USB video bar built for small rooms
-                delivering the best audio quality in its class with
-                group framing and automatic speaker tracking.
+            <div class="col-md-8" style="">
+              <label class="headingInsectionSubheading col-md-12">
+                <ul>
+                  <li>Conferencing</li>
+                  <li>International Bridging Services</li>
+                </ul>
               </label>
             </div>
           </div>
@@ -330,280 +358,55 @@
       </div>
       <div class="row section consultancy product">
 
-        <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px;" onclick='document.getElementById("Aver-VB342").click()'>
-              <a href="contact.php#Aver-VB342" id="Aver-VB342"></a>
+        <div class="inner col-md-5 box md product-inventory">
+          <div class="col-md-12" style="margin-bottom:60px;" onclick='document.getElementById("IOT-Solutions").click()'>
+            <a href="contact.php#IOT-Solutions" id="IOT-Solutions"></a>
             <label class="headingInSection col-md-12"></i>
-              Aver VB342</label>
+              IOT Solutions</label>
             <div class="col-md-4 competency_img">
-              <img width="250px" height="250px" src="pictures/products/Aver VB342.png"
-                alt="Video conferencing,Smart class room,Digital Projectors,Kerala Ernakulam Karnataka Tamilnadu">
+              <i class="fas fa-network-wired"></i>
 
               <!-- <button type="button" class="btn btn-primary btn-lg outline">Contact US</button> -->
 
             </div>
-            <div class="col-md-8" >
-              <label class="headingInsectionSubheading col-md-12">The VB342 Video Sound bar easily puts all participants
-                in clear focus with its 4K PTZ
-                camera’s extraordinary video quality and its professional-grade speakers and
-                microphones. Perfectly suited for huddle rooms.
+            <div class="col-md-8" style="">
+              <label class="headingInsectionSubheading col-md-12">
+                <ul>
+                  <li>Asset Management</li>
+                  <li>Fleet Management</li>
+                  <li>School Bus Tracking</li>
+                  <li>Workforce Management</li>
+                </ul>
               </label>
             </div>
           </div>
         </div>
 
-        <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px" onclick='document.getElementById("Aver-VC-520+").click()'>
-              <a href="contact.php#Aver-VC-520+" id="Aver-VC-520+"></a>
+        <div class="inner col-md-5 box md product-inventory">
+          <div class="col-md-12" style="margin-bottom:60px" onclick='document.getElementById("Security-Solutions").click()'>
+            <a href="contact.php#Security-Solutions" id="Security-Solutions"></a>
             <label class="headingInSection col-md-12"></i>
-              Aver VC 520+</label>
+              Security Solutions</label>
             <div class="col-md-4 competency_img">
-              <img width="250px" height="250px" src="pictures/products/Aver VC 520+.png"
-                alt="Video conferencing,Smart class room,Digital Projectors,Kerala Ernakulam Karnataka Tamilnadu">
+              <i class="fas fa-user-lock"></i>
 
               <!-- <button type="button" class="btn btn-primary btn-lg outline">Contact US</button> -->
 
             </div>
-            <div class="col-md-8" >
-              <label class="headingInsectionSubheading col-md-12">Suitable for meeting rooms of all sizes, from huddle
-                rooms all the way up to large
-                conference rooms, the VC520+ boasts a powerful 12X pan-tilt-zoom camera and an
-                advanced speakerphone.
-              </label>
-            </div>
+            <div class="col-md-8" style="">
+                <label class="headingInsectionSubheading col-md-12">
+                  <ul>
+                    <li>DDos</li>
+                    <li>vUTM</li>
+                  </ul>
+                </label>
+              </div>
           </div>
         </div>
 
 
       </div>
 
-      <div id="codec" class="row section consultancy product">
-        <label class="product-sub-heading">Codec Based VC Solutions</label>
-        <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px;" onclick='document.getElementById("Avaya-CU360").click()'>
-          <a href="contact.php#Avaya-CU360" id="Avaya-CU360"></a>
-            <label class="headingInSection col-md-12"></i>
-              Avaya CU360</label>
-            <div class="col-md-4 competency_img">
-              <img width="250px" height="250px" src="pictures/products/Avaya CU360.png"
-                alt="Video conferencing,Smart class room,Digital Projectors,Kerala Ernakulam Karnataka Tamilnadu">
-            </div>
-            <div class="col-md-8">
-              <label class="headingInsectionSubheading col-md-12">It provides the ultimate in simplicity of setup and
-                use, integrates with your existing UC platform,
-                integrates with any existing standards-based video infrastructure, and allows you to access and use
-                cloud-based applications. It is all you need to turn any space—including huddle spaces or huddle
-                rooms—into a cloud-enabled collaboration room.
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px"  onclick='document.getElementById("Poly-Studio-X50").click()'>
-              <a href="contact.php#Poly-Studio-X50" id="Poly-Studio-X50"></a>
-            <label class="headingInSection col-md-12"></i>
-              Poly Studio X50, X30</label>
-            <div class="col-md-4 competency_img">
-              <img width="250px" height="250px" src="pictures/products/Poly Studio X50, X30.png"
-                alt="Video conferencing,Smart class room,Digital Projectors,Kerala Ernakulam Karnataka Tamilnadu">
-
-              <!-- <button type="button" class="btn btn-primary btn-lg outline">Contact US</button> -->
-
-            </div>
-            <div class="col-md-8" >
-              <label class="headingInsectionSubheading col-md-12">IT teams can get rooms up and running in less than two
-                minutes with an all-in-one, turnkey set-up
-                process. There are only two components—the video bar and touch controller—that are immediately
-                paired right out of the box. No extra cords, cables, USB peripherals, or PCs to hide somewhere. With
-                Poly Studio X, native integration with leading cloud video services like Zoom allows users to get
-                started at the touch of a button. They can enjoy the same experience they have on their desktop and
-                share content wirelessly, leading to a more engaging and collaborative meeting experience.
-              </label>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-
-      <div class="row section consultancy product">
-
-        <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px;" onclick='document.getElementById("Poly-Group-500").click()'>
-              <a href="contact.php#Poly-Group-500" id="Poly-Group-500"></a>
-            <label class="headingInSection col-md-12"></i>
-              Poly Group 500</label>
-            <div class="col-md-4 competency_img">
-              <img width="250px" height="250px" src="pictures/products/Poly Group 500.png"
-                alt="Video conferencing,Smart class room,Digital Projectors,Kerala Ernakulam Karnataka Tamilnadu">
-
-              <!-- <button type="button" class="btn btn-primary btn-lg outline">Contact US</button> -->
-
-            </div>
-            <div class="col-md-8" >
-              <label class="headingInsectionSubheading col-md-12">The Polycom® RealPresence® Group 500 solution is ideal
-                for conference rooms and other
-                collaborative environments, from small meeting rooms to larger rooms with dual screens. The
-                solution offers flexible options that ensure that all participants can see and be seen, no matter
-                where they are sitting. Use the optional built-in multipoint to host video calls with up to 6
-                participants in HD quality.
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px" onclick='document.getElementById("Avaya-XT5000").click()'>
-              <a href="contact.php#Avaya-XT5000" id="Avaya-XT5000"></a>
-            <label class="headingInSection col-md-12"></i>
-              Avaya XT5000</label>
-            <div class="col-md-4 competency_img">
-              <img width="250px" height="250px" src="pictures/products/Avaya XT5000.png"
-                alt="Video conferencing,Smart class room,Digital Projectors,Kerala Ernakulam Karnataka Tamilnadu">
-
-              <!-- <button type="button" class="btn btn-primary btn-lg outline">Contact US</button> -->
-
-            </div>
-            <div class="col-md-8" >
-              <label class="headingInsectionSubheading col-md-12">The Avaya IX™ Room System XT5000 provides exceptional
-                video, audio, and data quality along with
-                ease-of-use designed to make users successful. The XT5000 incorporates dual 1080p 60fps live video
-                and content, HD audio, simultaneous H.264 High Profile and Scalable Video Coding (SVC), and multi-
-                party calling. Available PTZ cameras offer up to 20x optical zoom (12x digital) to view details and
-                include wide-angle capability for group participation. The system also supports USB recording.
-              </label>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-
-      <div class="row section consultancy product">
-
-        <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px;" onclick='document.getElementById("Aver-SVC500").click()'>
-              <a href="contact.php#Aver-SVC500" id="Aver-SVC500"></a>
-            <label class="headingInSection col-md-12"></i>
-              Aver SVC500</label>
-            <div class="col-md-4 competency_img">
-              <img width="250px" height="250px" src="pictures/products/Aver SVC500.png"
-                alt="Video conferencing,Smart class room,Digital Projectors,Kerala Ernakulam Karnataka Tamilnadu">
-
-              <!-- <button type="button" class="btn btn-primary btn-lg outline">Contact US</button> -->
-
-            </div>
-            <div class="col-md-8" >
-              <label class="headingInsectionSubheading col-md-12">The next generation of AVer’s video conferencing
-                system which supports a powerful 18X total zoom
-                lens and supports multi-site calls up to 16 sites. It has built in 32GB storage capacity for local
-                recording and also supports remote storage as well. You could also live stream the session.
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px" onclick='document.getElementById("Poly-Trio-Visual-Collaboration-Kit").click()'>
-              <a href="contact.php#Poly-Trio-Visual-Collaboration-Kit" id="Poly-Trio-Visual-Collaboration-Kit"></a>
-            <label class="headingInSection col-md-12"></i>
-              Poly Trio Visual Collaboration Kit</label>
-            <div class="col-md-4 competency_img">
-              <img width="250px" height="250px" src="pictures/products/Poly Trio Visual Collaboration Kit.png"
-                alt="Video conferencing,Smart class room,Digital Projectors,Kerala Ernakulam Karnataka Tamilnadu">
-
-              <!-- <button type="button" class="btn btn-primary btn-lg outline">Contact US</button> -->
-
-            </div>
-            <div class="col-md-8" >
-              <label class="headingInsectionSubheading col-md-12">With Poly Trio Video Solutions, you can right-size the
-                technology to meet the needs of every
-                workspace. Start with Poly Trio 8800, 8500 or 8300* and select from a variety of configurations to
-                meet the needs of your unique space and work habits. Polycom Trio supports your business needs
-                with its unique hybrid registration feature. Simultaneously register more than one voice or UC
-                platform.
-              </label>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-
-      <div id="board" class="row section consultancy product">
-        <label class="product-sub-heading">Board Room (AV) Solutions</label>
-        <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px;" onclick='document.getElementById("Huddle-room").click()'>
-              <a href="contact.php#Huddle-room" id="Huddle-room"></a>
-            <label class="headingInSection col-md-12"></i>
-              Huddle room</label>
-            <div class="col-md-4 competency_img">
-              <img width="250px" height="250px" src="pictures/products/Huddle room.png"
-                alt="Video conferencing,Smart class room,Digital Projectors,Kerala Ernakulam Karnataka Tamilnadu">
-
-              <!-- <button type="button" class="btn btn-primary btn-lg outline">Contact US</button> -->
-
-            </div>
-            <div class="col-md-8" >
-              <label class="headingInsectionSubheading col-md-12">Clientless, Native Wireless Presentation &amp;
-                Collaboration From iOS, Windows, Android &amp;
-                Mac OS.The solution supports 4 users content simultaneously out of which one can be from
-                wired as well.
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px"  onclick='document.getElementById("Medium-Sized-room").click()'>
-              <a href="contact.php#Medium-Sized-room" id="Medium-Sized-room"></a>
-            <label class="headingInSection col-md-12"></i>
-              Medium Sized room</label>
-            <div class="col-md-4 competency_img">
-              <img width="250px" height="250px" src="pictures/products/Medium Sized room.png"
-                alt="Video conferencing,Smart class room,Digital Projectors,Kerala Ernakulam Karnataka Tamilnadu">
-
-              <!-- <button type="button" class="btn btn-primary btn-lg outline">Contact US</button> -->
-
-            </div>
-            <div class="col-md-8" >
-              <label class="headingInsectionSubheading col-md-12">Ideal for 4-8 participants providing wired and
-                wireless BYOD connectivity options Easy in-table cable
-                connections keep your meetings clean and clutter free. The solution includes video switching and
-                wireless presentation system.
-              </label>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-
-      <div class="row section consultancy product">
-
-        <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px;" onclick='document.getElementById("Large-room").click()'>
-              <a href="contact.php#Large-room" id="Large-room"></a>
-            <label class="headingInSection col-md-12"></i>
-              Large room</label>
-            <div class="col-md-4 competency_img">
-              <img width="250px" height="250px" src="pictures/products/Large room.png"
-                alt="Video conferencing,Smart class room,Digital Projectors,Kerala Ernakulam Karnataka Tamilnadu">
-
-              <!-- <button type="button" class="btn btn-primary btn-lg outline">Contact US</button> -->
-
-            </div>
-            <div class="col-md-8" >
-              <label class="headingInsectionSubheading col-md-12">Includes wired and wireless content presentation
-                capabilities, Amplified crystal clear audio, powerful
-                control and automation.</label>
-              </label>
-            </div>
-          </div>
-        </div>
-
-      </div>
     </div>
 
   </div>
@@ -623,8 +426,8 @@
       </div>
     </div>
     <label id="copyrightlabel">© 2016 Forecom All rights reserved. | Powered by
-      <a href="http://www.scriptnex.com">
-        <img src="pictures/bylogo.png" class="bylogo">
+      <a href="http://www.logicbrace.com">
+        <img src="pictures/logicBrace-logo.png" class="bylogo">
       </a>
     </label>
   </div>

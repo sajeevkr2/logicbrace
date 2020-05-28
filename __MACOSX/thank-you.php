@@ -196,7 +196,9 @@
           </div>  
 
         </div>
-            <label id="copyrightlabel">© 2016 Forecom All rights reserved. | Powered by <a href="http://www.scriptnex.com"><img src="pictures/bylogo.png" class="bylogo"></a></label>
+            <label id="copyrightlabel">© 2016 Forecom All rights reserved. | Powered by       <a href="http://www.logicbrace.com">
+        <img src="pictures/logicBrace-logo.png" class="bylogo">
+      </a></label>
         </div>
 
 </body>

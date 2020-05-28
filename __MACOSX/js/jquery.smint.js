@@ -257,7 +257,17 @@ $(function() {
 }
 
 function scrolltodesireddiv(x){
-var y = x.split('#');
-$( "#"+y[1] ).trigger( "click" );
+	var y = x.split('#');
+	$( "#"+y[1] ).trigger( "click" );
+	}
+	
+	function subjectSelect(x){
+		var y = x.split('#');
+		if(y[1]){
+			$("#enquiry").val((y[1]));
+		}
+	}
 
+function selectSubjectFromProduct(x){
+	$("#enquiry").val(x);
 }

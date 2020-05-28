@@ -3,8 +3,7 @@ require_once( "./include/fgcontactform.php" );
 $formproc = new FGContactForm();
 //1. Add your email address here.
 //You can add more than one receipients.
-//$formproc->AddRecipient( 'info@forecom.co.in' );
-$formproc->AddRecipient( 'logicbrace@gmail.com' );
+$formproc->AddRecipient( 'info@forecom.co.in' );
 //<<---Put your email address here
 //2. For better security. Get a random tring from this link: http://tinyurl.com/randstr
 // and put it here
@@ -288,6 +287,13 @@ if ( isset( $_POST[ 'submit' ] ) ) {
     									<option value="I3200-Scanner">I3200 Scanner</option>
     									<option value="E1025-Scanner">E1025 Scanner</option>
     									<option value="FUJITSU-ScanSnap-SV600-Scanner">FUJITSU ScanSnap SV600 Scanner</option>
+											<option value="Cloud-and-SaaS">Cloud & SaaS</option>
+											<option value="Connectivity">Connectivity</option>
+											<option value="Marketing-Solutions">Marketing Solutions</option>
+											<option value="Collaboration">Collaboration</option>
+											<option value="IOT-Solutions">IOT Solutions</option>
+											<option value="Security-Solutions">Security-Solutions</option>
+											<option value="Educational-Technology">Educational-Technology</option>
   									</select>
 								</div>
 							</div>
@@ -383,7 +389,9 @@ if ( isset( $_POST[ 'submit' ] ) ) {
 			</div>
 
 		</div>
-		<label id="copyrightlabel">© 2016 Forecom All rights reserved. | Powered by <a href="http://www.scriptnex.com"><img src="pictures/bylogo.png" class="bylogo"></a></label>
+		<label id="copyrightlabel">© 2016 Forecom All rights reserved. | Powered by       <a href="http://www.logicbrace.com">
+        <img src="pictures/logicBrace-logo.png" class="bylogo">
+      </a></label>
 	</div>
 
 </body>

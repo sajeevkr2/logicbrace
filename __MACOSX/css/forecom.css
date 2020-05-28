@@ -976,7 +976,7 @@ label {
 	margin: auto;
 }
 .bylogo {
-	max-height: 10px;
+	max-height: 20px;
 }
 .img-responsive {
 	border-radius: 4px;
@@ -1285,13 +1285,20 @@ label {
     margin-top: 20px;
     margin-bottom: 53px;
 }
-.product-header {
+/* .product-header {
     margin-top: 57px;
     padding-top: 100px;
-}
+} */
 .product-inventory{
 	margin-left: 5%;
 }
 .product-inventory {
     margin-bottom: 40px;
+}
+.product-inventory .fa, .product-inventory .fas {
+    color: #ff2323b8;
+    font-size: 120px;
+    width: 192px;
+    height: 138px;
+    padding: 10px;
 }
