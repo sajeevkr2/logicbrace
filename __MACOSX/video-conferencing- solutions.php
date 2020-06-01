@@ -3,7 +3,7 @@ require_once( "./include/fgcontactform.php" );
 $formproc = new FGContactForm();
 //1. Add your email address here.
 //You can add more than one receipients.
-$formproc->AddRecipient( 'info@forecom.co.in' );
+$formproc->AddRecipient( 'logicbrace@gmail.com' );
 //<<---Put your email address here
 //2. For better security. Get a random tring from this link: http://tinyurl.com/randstr
 // and put it here
@@ -106,9 +106,9 @@ if ( isset( $_POST[ 'submit' ] ) ) {
     .row {
       width: 100% !important
     }
-    .sTop {
+    /* .sTop {
     height: 620px;
-    }
+    } */
     /* .navbar-default {
 	background: white !important;
 } */
@@ -168,10 +168,10 @@ if ( isset( $_POST[ 'submit' ] ) ) {
             <a href="#products" class="list-group-item list-group-item-success sidebar-menu-heading remove-border mobile-active-link"
               data-toggle="collapse" data-parent="#sidebar-wrapper">PRODUCTS</a>
             <div class="collapse" id="products">
-              <a href="video-conferencing- solutions.html" class="list-group-item sidebar-menuitem remove-border">Video conferencing solutions</a>
-              <a href="educational-technology-solutions.html" class="list-group-item sidebar-menuitem remove-border">Educational Technology Solutions</a>
-              <a href="enterprises-system&connectivity-solutions.html" class="list-group-item sidebar-menuitem remove-border">Enterprises System & Connectivity solutions</a>
-              <a href="digitization-solutions.html" class="list-group-item sidebar-menuitem remove-border">Digitization solutions</a>
+              <a href="video-conferencing- solutions.php" class="list-group-item sidebar-menuitem remove-border">Video conferencing solutions</a>
+              <a href="educational-technology-solutions.php" class="list-group-item sidebar-menuitem remove-border">Educational Technology Solutions</a>
+              <a href="enterprises-system&connectivity-solutions.php" class="list-group-item sidebar-menuitem remove-border">Enterprises System & Connectivity solutions</a>
+              <a href="digitization-solutions.php" class="list-group-item sidebar-menuitem remove-border">Digitization solutions</a>
             </div>
             <a href="#industries" class="list-group-item list-group-item-success sidebar-menu-heading remove-border" data-toggle="collapse" data-parent="#sidebar-wrapper">Customers</a>
             <div class="collapse" id="industries">
@@ -235,11 +235,11 @@ if ( isset( $_POST[ 'submit' ] ) ) {
               <a class="dropdown-toggle" href="#"><span
                   class="menu-item menu-item-manupulations active-link">PRODUCTS</span></a>
               <ul class="dropdown-menu" id="dropdown-menu-desktop">
-                <li><a href="video-conferencing- solutions.html">Video conferencing solutions</a></li>
-                <li><a href="educational-technology-solutions.html">Educational Technology Solutions</a></li>
-                <li><a href="enterprises-system&connectivity-solutions.html">Enterprises System & Connectivity
+                <li><a href="video-conferencing- solutions.php">Video conferencing solutions</a></li>
+                <li><a href="educational-technology-solutions.php">Educational Technology Solutions</a></li>
+                <li><a href="enterprises-system&connectivity-solutions.php">Enterprises System & Connectivity
                     solutions</a></li>
-                <li><a href="digitization-solutions.html">Digitization solutions</a></li>
+                <li><a href="digitization-solutions.php">Digitization solutions</a></li>
               </ul>
             </li>
             <li class="dropdown" id="dropdown-desktop">
@@ -262,7 +262,7 @@ if ( isset( $_POST[ 'submit' ] ) ) {
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link href="css/menu-color.css" rel="stylesheet" type="text/css">
   <div class="wrap">
-    <img class="headimage" src="pictures/video-conference.jpg">
+    <img class="headimage" src="pictures/products/large-room.jpg">
     <div class="section sTop">
       <!-- <h1>"A satisfied customer is the best business strategy of all"</h1> -->
     </div>
@@ -280,8 +280,8 @@ if ( isset( $_POST[ 'submit' ] ) ) {
       <div id="usb" class="row section consultancy product">
         <label class="product-sub-heading">USB Based VC Solutions</label>
         <div class="inner col-md-5 box md product-inventory">
-          <div class="col-md-12" style="margin-bottom:60px;" onclick='document.getElementById("Poly-Eagle-Eye-Cube-USB").click()'>
-              <a href="contact.php#Poly-Eagle-Eye-Cube-USB" id="Poly-Eagle-Eye-Cube-USB"></a>
+          <div class="col-md-12" style="margin-bottom:60px;" onclick='selectSubjectFromProduct("Poly-Eagle-Eye-Cube-USB")'>
+              <!-- <a href="contact.php#Poly-Eagle-Eye-Cube-USB" id="Poly-Eagle-Eye-Cube-USB"></a> -->
             <label class="headingInSection col-md-12"></i>
               Poly Eagle Eye Cube USB</label>
             <div class="col-md-4 competency_img">
@@ -301,8 +301,8 @@ if ( isset( $_POST[ 'submit' ] ) ) {
         </div>
 
         <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px" onclick='document.getElementById("Aver-CAM340").click()'>
-              <a href="contact.php#Aver-CAM340" id="Aver-CAM340"></a>
+          <div class="col-md-12" style="margin-bottom:60px" onclick='selectSubjectFromProduct("Aver-CAM340")'>
+              <!-- <a href="contact.php#Aver-CAM340" id="Aver-CAM340"></a> -->
             <label class="headingInSection col-md-12"></i>
               Aver CAM340</label>
             <div class="col-md-4 competency_img">
@@ -326,7 +326,7 @@ if ( isset( $_POST[ 'submit' ] ) ) {
       <div class="row section consultancy product">
 
         <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px;"  onclick='document.getElementById("Avaya-HC020").click()'>
+          <div class="col-md-12" style="margin-bottom:60px;"  onclick='selectSubjectFromProduct("Avaya-HC020")'>
               <a href="contact.php#Avaya-HC020" id="Avaya-HC020"></a>
             <label class="headingInSection col-md-12"></i>
               Avaya HC020</label>
@@ -347,7 +347,7 @@ if ( isset( $_POST[ 'submit' ] ) ) {
         </div>
 
         <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px"  onclick='document.getElementById("Poly-Studio").click()'>
+          <div class="col-md-12" style="margin-bottom:60px"  onclick='selectSubjectFromProduct("Poly-Studio")'>
               <a href="contact.php#Poly-Studio" id="Poly-Studio"></a>
             <label class="headingInSection col-md-12"></i>
               Poly Studio</label>
@@ -372,7 +372,7 @@ if ( isset( $_POST[ 'submit' ] ) ) {
       <div class="row section consultancy product">
 
         <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px;" onclick='document.getElementById("Aver-VB342").click()'>
+          <div class="col-md-12" style="margin-bottom:60px;" onclick='selectSubjectFromProduct("Aver-VB342")'>
               <a href="contact.php#Aver-VB342" id="Aver-VB342"></a>
             <label class="headingInSection col-md-12"></i>
               Aver VB342</label>
@@ -394,7 +394,7 @@ if ( isset( $_POST[ 'submit' ] ) ) {
         </div>
 
         <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px" onclick='document.getElementById("Aver-VC-520+").click()'>
+          <div class="col-md-12" style="margin-bottom:60px" onclick='selectSubjectFromProduct("Aver-VC-520+")'>
               <a href="contact.php#Aver-VC-520+" id="Aver-VC-520+"></a>
             <label class="headingInSection col-md-12"></i>
               Aver VC 520+</label>
@@ -421,7 +421,7 @@ if ( isset( $_POST[ 'submit' ] ) ) {
       <div id="codec" class="row section consultancy product">
         <label class="product-sub-heading">Codec Based VC Solutions</label>
         <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px;" onclick='document.getElementById("Avaya-CU360").click()'>
+          <div class="col-md-12" style="margin-bottom:60px;" onclick='selectSubjectFromProduct("Avaya-CU360")'>
           <a href="contact.php#Avaya-CU360" id="Avaya-CU360"></a>
             <label class="headingInSection col-md-12"></i>
               Avaya CU360</label>
@@ -441,7 +441,7 @@ if ( isset( $_POST[ 'submit' ] ) ) {
         </div>
 
         <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px"  onclick='document.getElementById("Poly-Studio-X50").click()'>
+          <div class="col-md-12" style="margin-bottom:60px"  onclick='selectSubjectFromProduct("Poly-Studio-X50")'>
               <a href="contact.php#Poly-Studio-X50" id="Poly-Studio-X50"></a>
             <label class="headingInSection col-md-12"></i>
               Poly Studio X50, X30</label>
@@ -471,7 +471,7 @@ if ( isset( $_POST[ 'submit' ] ) ) {
       <div class="row section consultancy product">
 
         <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px;" onclick='document.getElementById("Poly-Group-500").click()'>
+          <div class="col-md-12" style="margin-bottom:60px;" onclick='selectSubjectFromProduct("Poly-Group-500")'>
               <a href="contact.php#Poly-Group-500" id="Poly-Group-500"></a>
             <label class="headingInSection col-md-12"></i>
               Poly Group 500</label>
@@ -495,7 +495,7 @@ if ( isset( $_POST[ 'submit' ] ) ) {
         </div>
 
         <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px" onclick='document.getElementById("Avaya-XT5000").click()'>
+          <div class="col-md-12" style="margin-bottom:60px" onclick='selectSubjectFromProduct("Avaya-XT5000")'>
               <a href="contact.php#Avaya-XT5000" id="Avaya-XT5000"></a>
             <label class="headingInSection col-md-12"></i>
               Avaya XT5000</label>
@@ -524,7 +524,7 @@ if ( isset( $_POST[ 'submit' ] ) ) {
       <div class="row section consultancy product">
 
         <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px;" onclick='document.getElementById("Aver-SVC500").click()'>
+          <div class="col-md-12" style="margin-bottom:60px;" onclick='selectSubjectFromProduct("Aver-SVC500")'>
               <a href="contact.php#Aver-SVC500" id="Aver-SVC500"></a>
             <label class="headingInSection col-md-12"></i>
               Aver SVC500</label>
@@ -546,7 +546,7 @@ if ( isset( $_POST[ 'submit' ] ) ) {
         </div>
 
         <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px" onclick='document.getElementById("Poly-Trio-Visual-Collaboration-Kit").click()'>
+          <div class="col-md-12" style="margin-bottom:60px" onclick='selectSubjectFromProduct("Poly-Trio-Visual-Collaboration-Kit")'>
               <a href="contact.php#Poly-Trio-Visual-Collaboration-Kit" id="Poly-Trio-Visual-Collaboration-Kit"></a>
             <label class="headingInSection col-md-12"></i>
               Poly Trio Visual Collaboration Kit</label>
@@ -575,7 +575,7 @@ if ( isset( $_POST[ 'submit' ] ) ) {
       <div id="board" class="row section consultancy product">
         <label class="product-sub-heading">Board Room (AV) Solutions</label>
         <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px;" onclick='document.getElementById("Huddle-room").click()'>
+          <div class="col-md-12" style="margin-bottom:60px;" onclick='selectSubjectFromProduct("Huddle-room")'>
               <a href="contact.php#Huddle-room" id="Huddle-room"></a>
             <label class="headingInSection col-md-12"></i>
               Huddle room</label>
@@ -597,7 +597,7 @@ if ( isset( $_POST[ 'submit' ] ) ) {
         </div>
 
         <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px"  onclick='document.getElementById("Medium-Sized-room").click()'>
+          <div class="col-md-12" style="margin-bottom:60px"  onclick='selectSubjectFromProduct("Medium-Sized-room")'>
               <a href="contact.php#Medium-Sized-room" id="Medium-Sized-room"></a>
             <label class="headingInSection col-md-12"></i>
               Medium Sized room</label>
@@ -624,7 +624,7 @@ if ( isset( $_POST[ 'submit' ] ) ) {
       <div class="row section consultancy product">
 
         <div class="inner col-md-5 box md product-inventory" >
-          <div class="col-md-12" style="margin-bottom:60px;" onclick='document.getElementById("Large-room").click()'>
+          <div class="col-md-12" style="margin-bottom:60px;" onclick='selectSubjectFromProduct("Large-room")'>
               <a href="contact.php#Large-room" id="Large-room"></a>
             <label class="headingInSection col-md-12"></i>
               Large room</label>
@@ -648,7 +648,7 @@ if ( isset( $_POST[ 'submit' ] ) ) {
       
       <div class="row section consultancy product">
         <div class="inner col-md-4 col-md-offset-4 box md product-inventory">
-          <label>Contact Us</label>
+          <label style="color: grey;font-size: 20px;font-weight: 500 !important;">Contact Us</label>
           <div class="col-md-12" style="margin-bottom:60px;">
             <form id='contactus' action='<?php echo $formproc->GetSelfScript(); ?>' method='post' accept-charset='UTF-8'>
 							<input type='hidden' name='submitted' id='submitted' value='1'/>
@@ -659,7 +659,7 @@ if ( isset( $_POST[ 'submit' ] ) ) {
 							<div class="form-group" style="display:none;">
 								<!-- <label for="name" class="col-sm-2 control-label">Name</label> -->
 								<div class="col-sm-12">
-								<select id="enquiry" name="enquiry" disabled>
+								<!-- <select id="enquiry" name="enquiry" disabled>
 								<option value="">General Enquiry</option>
   									<option value="Poly-Eagle-Eye-Cube-USB">Poly Eagle Eye Cube USB</option>
     									<option value="Aver-CAM340">Aver CAM340</option>
@@ -689,13 +689,21 @@ if ( isset( $_POST[ 'submit' ] ) ) {
 											<option value="Security-Solutions">Security-Solutions</option>
 											<option value="Educational-Technology">Educational-Technology</option>
 											
-  									</select>
+  									</select> -->
 								</div>
 							</div>
 							<div class="form-group">
 								<!-- <label for="name" class="col-sm-2 control-label">Name</label> -->
 								<div class="col-sm-12">
 									<input class="form-control required" id="name" name="name" placeholder="First &amp; Last Name" value="<?php echo $formproc->SafeDisplay('name') ?>" type="text">
+									<p class="text-danger"></p>
+								</div>
+                            </div>
+               <input class="form-control required" style="display:none;" id="product" name="product" value="" type="text">
+                <div class="form-group">
+								<!-- <label for="email" class="col-sm-2 control-label">Email</label> -->
+								<div class="col-sm-12">
+									<input class="form-control" id="phone_number" name="Phone Number" placeholder="Phone Number" value="" type="number">
 									<p class="text-danger"></p>
 								</div>
 							</div>

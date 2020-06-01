@@ -3,7 +3,8 @@ require_once( "./include/fgcontactform.php" );
 $formproc = new FGContactForm();
 //1. Add your email address here.
 //You can add more than one receipients.
-$formproc->AddRecipient( 'info@forecom.co.in' );
+//$formproc->AddRecipient( 'info@forecom.co.in' );
+$formproc->AddRecipient( 'logicbrace@gmail.com' );
 //<<---Put your email address here
 //2. For better security. Get a random tring from this link: http://tinyurl.com/randstr
 // and put it here
@@ -15,7 +16,7 @@ if ( isset( $_POST[ 'submit' ] ) ) {
 	if ( $formproc->ProcessForm() ) {
 		// $formproc->RedirectToURL("thank-you.php");
 		header( "Location: thank-you.php" );
-		exit;
+		exit;5555555555555555555
 	}
 }
 //header("Location: http://forecom.co.in/thank-you.php");
@@ -265,8 +266,8 @@ if ( isset( $_POST[ 'submit' ] ) ) {
 							<div class="form-group" style="display:none;">
 								<!-- <label for="name" class="col-sm-2 control-label">Name</label> -->
 								<div class="col-sm-12">
-								<!-- <select id="enquiry" name="enquiry" disabled>
-								<option value="General Enquiry">General Enquiry</option>
+								<select id="enquiry" name="enquiry" disabled>
+								<option value="">General Enquiry</option>
   									<option value="Poly-Eagle-Eye-Cube-USB">Poly Eagle Eye Cube USB</option>
     									<option value="Aver-CAM340">Aver CAM340</option>
     									<option value="Avaya-HC020">Avaya HC020</option>
@@ -294,7 +295,8 @@ if ( isset( $_POST[ 'submit' ] ) ) {
 											<option value="IOT-Solutions">IOT Solutions</option>
 											<option value="Security-Solutions">Security-Solutions</option>
 											<option value="Educational-Technology">Educational-Technology</option>
-  									</select> -->
+											
+  									</select>
 								</div>
 							</div>
 							<div class="form-group">
@@ -304,15 +306,6 @@ if ( isset( $_POST[ 'submit' ] ) ) {
 									<p class="text-danger"></p>
 								</div>
 							</div>
-                            <div class="form-group">
-								<!-- <label for="email" class="col-sm-2 control-label">Email</label> -->
-								<div class="col-sm-12">
-									<input class="form-control" id="phone_number" name="Phone Number" placeholder="Phone Number" value="" type="number">
-
-									<p class="text-danger"></p>
-								</div>
-							</div>			
-
 							<div class="form-group">
 								<!-- <label for="email" class="col-sm-2 control-label">Email</label> -->
 								<div class="col-sm-12">

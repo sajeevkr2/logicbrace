@@ -269,5 +269,9 @@ function scrolltodesireddiv(x){
 	}
 
 function selectSubjectFromProduct(x){
-	$("#enquiry").val(x);
+	$("#product").val(x);
+	var val= Number($('#contactus').offset().top) - 300;
+	$('html, body').animate({
+		scrollTop: val + 'px'
+	}, 1000, 'swing');
 }
