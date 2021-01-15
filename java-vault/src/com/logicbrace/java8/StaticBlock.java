@@ -6,18 +6,18 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 public class StaticBlock {
-	static int B;
-	static int H;
-	static Boolean flag = false;
+	private static int B;
+	private static int H;
+	private static Boolean flag;
 	static {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		try {
 			B = Integer.parseInt(br.readLine());
 			H = Integer.parseInt(br.readLine());
 		} catch (Exception e) {
-		}
 
-		flag = B > 1 && H > 1 ? true : false;
+		}
+		flag = B > 1 && H > 1;
 		if (!flag)
 			System.out.println("java.lang.Exception: Breadth and height must be positive");
 	}
